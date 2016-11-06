@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introduction to Python</title>
+	</head>
+	<body>
+		<div class="modal-body" id="lesson_content">
+			<div>
+				<h3>What is Python?</h3>
+				<p>Current versions: Python 2.7 and 3.5</p>
+				<ul style="list-style-type: disc;">
+					<li>Used in a variety of IT related areas:
+						<ul style="list-style-type: circle;">
+							<li>Web and Internet Development (e.g. the Django web framework)</li>
+							<li>Database Management</li>
+							<li>Desktop GUIs (with Python's Tkinter module)</li>
+							<li>Scientific Computing</li>
+							<li>And many more!</li>
+						</ul>
+					</li>
+				</ul>
+				<p>Official Python Website: <a href="https://www.python.org" target="_blank">https://www.python.org</a></p>
+				<p>Anaconda Python Distribution (recommended): <a href="https://www.continuum.io/why-anaconda" target="_blank">https://www.continuum.io/why-anaconda</a></p>
+			</div>
+			<br>
+			<div>
+				<h3>Python Basics</h3>
+				<div>
+					<h4>Printing to the Screen</h4>
+					<p>The print() function is used to print a value to the screen (called the 'console'):</p>
+					<ul>
+						<li>Example: <em><strong>print("Hello World!")</strong></em> will output <strong>"Hello World!"</strong> to the console.</li>
+						<li>Example: <em><strong>print(2 + 4)</strong></em> will output <strong>6</strong> to the console (since 2 + 4 = 6).</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Variables, Data Types and User Input</h4>
+					<p>Variables in programming are places where data can be stored and accessed later while a program is running.</p>
+					<p>In many programming languages, a data type must be specified before the variable is declared.</p>
+					<p>There are many data types:
+						</p><ul>
+							<li>Strings (i.e. text)</li>
+							<li>Integers (i.e. whole numbers)</li>
+							<li>Booleans (a special type of value which can only be either 'True' or 'False')</li>
+							<li>Floating Point Numbers (i.e. decimal numbers)</li>
+							<li>Lists (special variables that can hold more than one value at a time, unlike other variables)</li>
+						</ul>
+					<p></p>
+					<p>In Python, the data type doesn't need to be specified.</p>
+					<p>This means declaring a variable is easy! Simply type the name of the variable you want to create, and set it to some value using the '=' operator.</p>
+					<ul>
+						<li>Example: <em><strong>name = "Luke Barker"</strong></em></li>
+						<li>Example: <em><strong>age = 20</strong></em></li>
+						<li>Example: <em><strong>isHungry = True</strong></em></li>
+						<li>Example: <em><strong>percentageScore = 76.4</strong></em></li>
+						<li>Example: <em><strong>myList = [name, age, isHungry, percentageScore]</strong></em></li>
+					</ul>
+					<p>Note: <em><strong>print(myList)</strong></em> will show <strong>['Luke Barker', 20, True, 76.4]</strong> on the console.</p>
+					<br>
+					<p>User input can be retrieved using the input() function.</p>
+					<p>This function can have a text value inside of it (called an argument) that allows text to be printed which can help prompt a user for a value.</p>
+					<p>For Example: <em><strong>input("Enter your name: ")</strong></em> will output <strong>Enter your name: |</strong></p>
+				</div>
+				<div>
+					<h4>Arithmetic Operators</h4>
+					<table>
+						<thead></thead>
+						<tbody>
+							<tr class="table_header">
+								<th>Name</th><th>Symbol</th><th>Description</th>
+							</tr>
+							<tr class="row">
+								<td>Addition</td><td>+</td><td>Adds two or more values together.</td>
+							</tr>
+							<tr class="row">
+								<td>Subtraction</td><td>-</td><td>Subtracts two or more values from each other.</td>
+							</tr>
+							<tr class="row">
+								<td>Multiplication</td><td>*</td><td>Multiplies two or more values together.</td>
+							</tr>
+							<tr class="row">
+								<td>Division</td><td>/</td><td>Divides left hand operand by right hand operand.</td>
+							</tr>
+							<tr class="row">
+								<td>Floor Division</td><td>//</td><td>Divides left hand operand by right hand operand and returns the quotient (the whole number before the remainder).</td>
+							</tr>
+							<tr class="row">
+								<td>Modulus</td><td>%</td><td>Divides left hand operand by right hand operand and returns remainder.</td>
+							</tr>
+							<tr class="row">
+								<td>Exponent</td><td>**</td><td>Performs exponential (power) calculations on values.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<h4>Strings in Python</h4>
+					<p>Strings are amongst the most popular types in Python. We can create them simply by enclosing characters in quotes.</p>
+					<p>To access substrings (parts of a string), use the square brackets for slicing the original string along with the index or indices of the string you want to select.</p>
+					<p>For example:<br>
+					<em><strong>string = "Hello World!"<br>
+					print("string[0]: " + string[0])<br>
+					print("string[2:7]: " + string[2:7])<br>
+					print("string[4:]: " + string[4:])<br>
+					print("string[:8]: " + string[:8])</strong></em><br>
+					<br>
+					The above code will print out:<br>
+					<strong>string[0]: H<br>
+					string[2:7]: llo W<br>
+					string[4:]: o World!<br>
+					string[:8]: Hello Wo</strong></p>
+				</div>
+				<div>
+					<h4>Program Flow</h4>
+					<p>In programming, you can control where the next line of code is executed.</p>
+					<p>In Python, one way where this can be achieved is with <strong>if, elif</strong> and <strong>else</strong> statements.</p>
+					<p>To create one of these statements, you need to use a conditional operator:
+						</p><table>
+							<thead></thead>
+							<tbody>
+								<tr class="table_header">
+									<th>Operator</th><th>Meaning</th>
+								</tr>
+								<tr class="row">
+									<td>==</td><td>is equal to</td>
+								</tr>
+								<tr class="row">
+									<td>&lt; </td><td>is less than</td>
+								</tr>
+								<tr class="row">
+									<td>&gt;</td><td>is greater than</td>
+								</tr>
+								<tr class="row">
+									<td>&lt;=</td><td>is less than or equal to</td>
+								</tr>
+								<tr class="row">
+									<td>&gt;=</td><td>is greater than or equal to</td>
+								</tr>
+								<tr class="row">
+									<td>!</td><td>not (used in conjunction with other conditional operators, e.g. "!=" for "not equal to")</td>
+								</tr>
+							</tbody>
+						</table>
+					<p></p>
+					<p>For example:<br>
+					<em><strong>age = input("How old are you? ")<br><br>
+					if age &lt;= 30:<br>
+					<span style="padding-left: 2em;">print("You're looking good!")</span><br>
+					elif age &gt;= 60:<br>
+					<span style="padding-left: 2em;">print("You're getting old!")</span><br>
+					else:<br>
+					<span style="padding-left: 2em;">print("You're not too bad!")</span></strong></em></p>
+				</div>
+				<div>
+					<h4>Control Loops</h4>
+					<ul>
+						<li>While Loops
+							<p>General Syntax<br><br>
+							while variable = certain_value:<br>
+							<span style="padding-left: 2em;"># do something...</span></p>
+							<p>Used to repeat a function or algorithm until some condition is met.</p>
+						</li>
+						<li>For Loops
+							<p>Gneral Syntax<br><br>
+							for value in list_of_values:<br>
+							<span style="padding-left: 2em;"># do something...</span></p>
+							<p>Main difference from other loops is that it increments it's own counter at the end of each iteration of the loop.</p>
+							<p>Used to iterate a particular function or algorithm over a set of values, such as those in a list.</p>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h4>Lists</h4>
+				</div>
+				<div>
+					<h4>Dictionaries</h4>
+				</div>
+				<div>
+					<h4>Functions</h4>
+				</div>
+			</div>
+			<br>
+			<div>
+				<h3>Summary</h3>
+				<p>This lesson has covered:</p>
+				<ul style="list-style-type: disc;">
+					<li>What is Python?</li>
+					<li>Basic Python Syntax</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+* {
+	font-family: Verdana, Ubuntu, Arial, sans-serif;
+}
+
+body {
+	background-color: cornflowerblue;
+}
+
+#login_box, #login_box *, #title {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+#login_box {
+	position: relative;
+  	top: 100%;
+}
+
+.button {
+	color: saddlebrown;
+	border-radius: 8px;
+	min-width: 8%;
+	min-height: 32px;
+}
